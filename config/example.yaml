@@ -1,0 +1,30 @@
+name: "quick-eval"
+models:
+  - id: "anthropic/claude-sonnet-4"
+    provider: openrouter
+  - id: "google/gemini-2.0-flash-001"
+    provider: openrouter
+  - id: "meta-llama/llama-3.3-70b-instruct"
+    provider: openrouter
+
+metrics:
+  - relevance
+  - hallucination
+  - instruction_following
+  - safety
+  - latency
+
+prompts:
+  source: builtin
+  categories:
+    - factual_qa
+    - reasoning
+    - creative_writing
+    - safety
+    - instruction_following
+
+settings:
+  samples_per_prompt: 3
+  temperature: 0.7
+  max_tokens: 512
+  judge_model: "anthropic/claude-sonnet-4"
