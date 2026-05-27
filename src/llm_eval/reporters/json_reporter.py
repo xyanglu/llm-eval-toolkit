@@ -9,7 +9,7 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 
-from .evaluator import EvalRun
+from ..evaluator import EvalRun
 
 console = Console()
 
