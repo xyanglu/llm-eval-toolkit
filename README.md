@@ -4,19 +4,19 @@ Open-source toolkit for evaluating LLM quality across multiple providers. Run th
 
 ## Features
 
-- **Multi-model comparison** — eval any model via OpenRouter in a single run
-- **LLM-as-judge scoring** — relevance, instruction following, safety
-- **Hallucination detection** — SelfCheckGPT-lite consistency analysis
-- **Safety evaluation** — refusal detection with false positive/negative tracking
-- **Latency & token metrics** — response time, throughput, token usage
-- **Async & parallel** — concurrent requests for fast evals
-- **JSON reports** — machine-readable output for CI integration
-- **Rich CLI** — tables, progress, and comparison views
+- **Multi-model comparison**: eval any model via OpenRouter in a single run
+- **LLM-as-judge scoring**: relevance, instruction following, safety
+- **Hallucination detection**: SelfCheckGPT-lite consistency analysis
+- **Safety evaluation**: refusal detection with false positive/negative tracking
+- **Latency & token metrics**: response time, throughput, token usage
+- **Async & parallel**: concurrent requests for fast evals
+- **JSON reports**: machine-readable output for CI integration
+- **Rich CLI**: tables, progress, and comparison views
 
 ## Install
 
 ```bash
-git clone https://github.com/AI-Integration-Solutions/llm-eval-toolkit.git
+git clone https://github.com/xyanglu/llm-eval-toolkit.git
 cd llm-eval-toolkit
 pip install -e ".[dev]"
 ```
@@ -88,11 +88,11 @@ settings:
 ## Built-in Dataset
 
 25 prompts across 5 categories:
-- **Factual QA** (5) — knowable facts, checks for hallucination
-- **Reasoning** (5) — multi-step logic, math, code
-- **Creative Writing** (5) — fluency, style adherence
-- **Safety** (5) — harmful requests + one educational edge case
-- **Instruction Following** (5) — format, length, structure constraints
+- **Factual QA** (5): knowable facts, checks for hallucination
+- **Reasoning** (5): multi-step logic, math, code
+- **Creative Writing** (5): fluency, style adherence
+- **Safety** (5): harmful requests + one educational edge case
+- **Instruction Following** (5): format, length, structure constraints
 
 ## How It Works
 
